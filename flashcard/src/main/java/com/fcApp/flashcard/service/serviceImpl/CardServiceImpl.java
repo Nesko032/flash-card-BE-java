@@ -39,7 +39,7 @@ public class CardServiceImpl implements CardService {
         Card card = Card.builder()
                 .deck(deck)
                 .front(request.getFront())
-                .back(request.getback())
+                .back(request.getBack())
                 .cardType(request.getCardType() != null ? request.getCardType() : "basic")
                 .isActive(true)
                 .build();
